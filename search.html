@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="search.css">
+</head>
+
+<body>
+    <div class='searchbox'></span>
+        <form class="searchbox" onSubmit="return check();" autocomplete="off">
+            <input id="input" type="text" placeholder="从所有文章内检索..." name="search" oninput="searchtext()"
+                onpropertychange="searchtext()">
+            <button type="button" id='searchbutton'><span class="iconfontmini icon-search"></span></button>
+            <div class="resultlist" id="resultlist">
+                <i>- 搜索 -</i>
+                <hr>
+                <p align="center">
+                    输入关键词以在文章标题及正文中查询
+                </p>
+                </hr>
+            </div>
+        </form>
+    </div>
+</body>
+
+<script type="text/javascript" src="searcher.js"></script>
+
+
+</html>
